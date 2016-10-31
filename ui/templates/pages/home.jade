@@ -1,0 +1,23 @@
+section.page.home
+  h3 Welcome to TicTacToe world! Type your names to kick it off!
+
+  section.page
+    form(data-hook="person-form")
+      fieldset(data-hook="field-container")
+      .buttons
+        button.btn(data-hook="reset", type="submit") Submit and Play
+
+  section.page.people-list-container.hidden
+    h2 Leadership board
+
+    table.table-bordered.leadership
+      tr
+        td
+          strong Name
+        td
+          strong Wins
+        td
+          strong Draws
+        td
+          strong Looses
+    div(data-hook="people-list")

@@ -1,0 +1,10 @@
+section.page
+  h2.text-center(data-hook="brief")
+
+  section.page
+    table.table-bordered.game
+      tbody
+        each y in [0, 1, 2]
+          tr
+            each x in [0, 1, 2]
+              td.empty.text-center(data-hook="move" data-y=y data-x=x)
